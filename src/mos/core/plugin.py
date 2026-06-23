@@ -141,6 +141,7 @@ class PluginDefinition:
     command: click.Group
     get_config: Callable
     reload_config: Callable
+    init: Optional[Callable] = None
     register_mcp: Optional[Callable] = None
     resources: List[Resource] = field(default_factory=list)
     source: PluginSource = PluginSource.BUILTIN
