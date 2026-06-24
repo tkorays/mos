@@ -1,3 +1,3 @@
-"""MOS - Mind OS or Money OS"""
+"""MintOS"""
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
