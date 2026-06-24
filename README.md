@@ -1,4 +1,4 @@
-# MOS
+# MOS core
 
 MOS 是一个基于 Python 的插件化框架，提供核心基础设施和插件管理能力。
 
@@ -22,13 +22,14 @@ MOS 通过插件扩展功能，目前已有的插件：
 
 ```bash
 # 安装核心框架
-pip install mos
+pip install mos-core
 
 # 安装插件（从 GitHub）
-pip install git+https://github.com/yourname/mos_quant.git
-pip install git+https://github.com/yourname/mos_wiki.git
-pip install git+https://github.com/yourname/mos_agent.git
+pip install git+https://github.com/tkorays/mos_quant.git
+pip install git+https://github.com/tkorays/mos_wiki.git
+pip install git+https://github.com/tkorays/mos_agent.git
 
 # 查看已加载插件
 mos plugin list
 ```
+
