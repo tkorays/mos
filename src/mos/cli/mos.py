@@ -1,5 +1,3 @@
-import warnings
-
 import click
 
 from mos.core.logging import setup_logging
@@ -9,13 +7,6 @@ from mos.cli.config import config
 from mos.cli.init import init
 from mos.cli.plugin import plugin as plugin_cmd
 from mos.cli.mcp import mcp
-
-
-warnings.filterwarnings(
-    "ignore",
-    message="pkg_resources is deprecated as an API",
-    category=UserWarning
-)
 
 
 @click.group()
