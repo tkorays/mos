@@ -204,7 +204,7 @@ mos-plugin/
 name = "mos-plugin"
 version = "0.1.0"
 dependencies = [
-    "mos>=0.1.0",  # 声明对主程序的依赖
+    "mos-core>=0.1.0",  # 声明对主程序的依赖
     # 插件自己的依赖
 ]
 

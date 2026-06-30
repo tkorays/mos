@@ -39,6 +39,11 @@ for r in ep_results:
         if r.definition.register_mcp:
             from mos.core.mcp import mcp
             r.definition.register_mcp(mcp)
+        # Register background tasks if plugin supports it
+        if r.definition.register_tasks:
+            from mos.core.task import get_task_manager
+            task_manager = get_task_manager()
+            r.definition.register_tasks(task_manager.registry, task_manager.event_bus)
 
 
 if __name__ == "__main__":

@@ -178,7 +178,7 @@ authors = [
 
 # 插件依赖：声明对主程序的依赖
 dependencies = [
-    "mos>=0.1.0",
+    "mos-core>=0.1.0",
     "click>=8.4.1",
 ]
 
