@@ -93,6 +93,8 @@ class PluginDefinition:
             does not provide configuration management.
         init: Optional initialization function called after plugin load.
         register_mcp: Optional function to register MCP tools.
+        register_tasks: Optional function to register background tasks.
+            The function should accept a TaskRegistry and EventBus parameter.
     """
 
     name: str
@@ -101,6 +103,7 @@ class PluginDefinition:
     get_config: Optional[Callable] = None
     init: Optional[Callable] = None
     register_mcp: Optional[Callable] = None
+    register_tasks: Optional[Callable] = None
 
 
 class PluginRegistry:

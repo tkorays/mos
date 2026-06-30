@@ -7,6 +7,7 @@ from mos.cli.config import config
 from mos.cli.init import init
 from mos.cli.plugin import plugin as plugin_cmd
 from mos.cli.mcp import mcp
+from mos.cli.task import task
 
 
 @click.group()
@@ -19,6 +20,7 @@ cli.add_command(config)
 cli.add_command(init)
 cli.add_command(plugin_cmd)
 cli.add_command(mcp)
+cli.add_command(task)
 
 
 cfg = get_config()
